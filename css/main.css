@@ -1263,7 +1263,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4dffff;
+  background: #a74b9f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1569,39 +1569,6 @@ pre .javascript .function {
   }
   50%, 70% {
     transform: scale(1.1);
-  }
-}
-.back-to-top {
-  font-size: 12px;
-  text-align: center;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-.back-to-top {
-  background: #222;
-  bottom: -100px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  left: 30px;
-  opacity: 0.6;
-  padding: 0 6px;
-  position: fixed;
-  transition-property: bottom;
-  z-index: 1300;
-  width: initial;
-}
-.back-to-top:hover {
-  color: #fc6423;
-}
-.back-to-top.back-to-top-on {
-  bottom: 30px;
-}
-@media (max-width: 991px) {
-  .back-to-top {
-    left: 20px;
-    opacity: 0.8;
   }
 }
 .reading-progress-bar {
@@ -2062,44 +2029,6 @@ pre .javascript .function {
 }
 #qr p {
   text-align: center;
-}
-.followme {
-  align-items: center;
-  background: var(--card-bg-color);
-  border-left: 3px solid #ff2a2a;
-  color: #bbb;
-  margin: 2em 0 1em 0;
-  padding: 1em 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.followme .social-list {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-}
-.followme .social-list .social-item {
-  margin: 0.5em 2em;
-}
-@media (max-width: 991px) {
-  .followme .social-list .social-item {
-    margin: 0.5em 0.75em;
-  }
-}
-.followme .social-list .social-link {
-  border: 0;
-  display: inline-block;
-  text-align: center;
-}
-.followme .social-list .social-link .icon {
-  font-size: 1.75em;
-  height: 1.75em;
-  width: 1.75em;
-}
-.followme .social-list .social-link .label {
-  display: block;
-  font-size: 14px;
 }
 .category-all-page .category-all-title {
   text-align: center;
@@ -2828,7 +2757,7 @@ img.img-topic {
   margin-top: 20px;
 }
 carousel-inner {
-  margin-bottom: 200px;
+  margin-bottom: 0px;
 }
 /*标题样式设置*/
 .site-meta .site-title {
@@ -2848,10 +2777,28 @@ carousel-inner {
 a {
   border-bottom: none;
 }
-/*鼠标放在链接上的样式*/
+/*鼠标放在链接上的样式 #
 a:hover {
-  color: #1774d1;
-  border-bottom-color: #a166ab !important;
+	color: #1774d1;
+	border-bottom-color: rgb(161, 102, 171) !important;
+}*/
+.post-body p a {
+  border-bottom: none;
+  border-bottom: 1px solid;
+}
+.post-body p a:hover {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.popular-posts-title a {
+  border-bottom: none;
+  border-bottom: 1px solid;
+}
+.popular-posts-title a:hover {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
 }
 /*修改post文章样式*/
 .posts-expand .post {
@@ -2864,11 +2811,6 @@ a:hover {
 /*文章标题样式*/
 .posts-expand .post-title {
   text-align: center;
-}
-/*阅读全文按钮样式*/
-.post-button {
-  text-align: center;
-  margin-top: 1px;
 }
 /*第一篇post与轮播图的距离*/
 .use-motion .post-block,
@@ -2897,7 +2839,12 @@ a:hover {
   margin-bottom: 0px;
   color: #666;
 }
-/*阅读全文按钮设置
+/*阅读全文按钮样式与设置#
+.post-button{
+  text-align:center;
+  margin-top: 1px;
+}
+
 .post-button .btn {
 	color: #555;
 	background-color: rgb(255, 255, 255);
@@ -3005,6 +2952,79 @@ ul {
 .posts-expand .post-body ul li p {
   margin-bottom: 10px;
   border-radius: 6px;
+}
+/*归档页样式优化*/
+.post-meta {
+  position: absolute;
+  color: #fff;
+  background-color: #49b1f5;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+}
+.collection-header {
+  color: #fff;
+  background-color: #49b1f5;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 15px;
+}
+.mypost {
+  position: relative;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a.my-post-title-link:before {
+  top: 10px;
+  width: 18px;
+  height: 18px;
+  content: "📚";
+  font-size: 20px;
+  line-height: 18px;
+}
+a.my-post-title-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+.my-post-title {
+  display: block;
+  margin-left: 5rem;
+  color: #4c4948;
+  text-decoration: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.my-post-header {
+  position: top;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.my-post-title-link {
+  font-size: 16px;
+  font-weight: 500;
+}
+.my-post-meta {
+  position: absolute;
+  color: #99a9bf;
+  width: 80px;
+  color: #114142;
+}
+.site-overview {
+  text-align: center;
+}
+canvas#canvas {
+  margin-top: 20px;
 }
 /*valine1.3.4样式美化*/
 div#comments.comments.v {
@@ -3225,4 +3245,104 @@ strong {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -moz-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+/*相关文章推荐样式设置*/
+.popular-posts-header {
+  margin-top: 45px;
+  font-size: 20px;
+  font-family: "PT Serif", "Songti SC", STZhongsong, "PingFang SC", "Microsoft YaHei", Georgia, sans;
+  font-weight: 900;
+}
+ul.popular-posts .popular-posts-item .popular-posts-title a {
+  border-bottom: 1px solid #999;
+}
+ul.popular-posts .popular-posts-item .popular-posts-title a:hover {
+  border-bottom: none;
+}
+/*back-to-top按钮美化
+.back-to-top.back-to-top-on {
+    bottom: unset;
+    top: calc(100vh - 900px - 200px);
+}
+
+.back-to-top {
+    width: 70px;
+    height: 360px;
+    top: -900px;
+    bottom: unset;
+    transition: all 0.5s ease-in-out;
+    background: url("https://site-1258928558.cos.ap-guangzhou.myqcloud.com/scroll.png");
+}
+
+.back-to-top {
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1050;
+    padding: 0 6px;
+    font-size: 12px;
+    opacity: 1;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+ }*/
+.moon-menu,
+.moon-menu-text {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+  z-index: 999;
+}
+.moon-menu-svg,
+.moon-menu-button {
+  width: 4rem;
+  height: 4rem;
+}
+.moon-menu-button {
+  cursor: pointer;
+}
+.moon-menu-cricle {
+  fill: #607d8b;
+  opacity: 0.9;
+}
+.moon-menu-border {
+  stroke: #607d8b;
+  opacity: 0.9;
+  stroke-width: 1px;
+  fill: none;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+.moon-menu-points {
+  transform: translate3d(2rem, 2rem, 0);
+}
+.moon-menu-point {
+  fill: #fff;
+  transition: all 0.15s cubic-bezier(0, 0, 0.382, 1.618);
+}
+.moon-menu-text {
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  line-height: 4rem;
+  font-size: 1.2rem;
+  display: none;
+}
+.moon-menu-item {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #000;
+  opacity: 0;
+  display: block;
+  transition: all 0.3s cubic-bezier(0, 0, 0.382, 1.618);
+  z-index: -1;
+  text-align: center;
+  line-height: 2.5rem;
+  color: #fff;
+  cursor: pointer;
 }
