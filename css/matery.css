@@ -1016,10 +1016,7 @@ article .article-tags .chip {
     margin-top: -60px;
 }
 
-iframe {
-    height: 100%;
-    width: 100%;
-}
+
 
 /* 修改小屏幕下文章详情table样式. */
 @media only screen and (max-width: 550px) {
