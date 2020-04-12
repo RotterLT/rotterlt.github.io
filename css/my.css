@@ -93,18 +93,15 @@ font-family: 'Roboto Mono', monospace;*/
 }*/
 
 
-/*副标题*/
-.bg-cover .title{
-    font-size: 3rem;
-}
 
-/*修改背景图片
+/*修改背景图片*/
 body {
      background:url(http://q8d3d87m0.bkt.clouddn.com//image/20200407150217.png);
-     background-repeat: repeat;  /* repeat 或 no-repeat */
+     background-repeat: repeat;  
     background-attachment:fixed;
     background-position:50% 50%;
-} */
+} 
+
 
 /*// 文章中图片样式*/
 #articleContent img {

@@ -37,24 +37,44 @@ body {
     background-color: #eaeaea;
     margin: 0;
     color: #34495e;
+    font-family: Lato;
 }
+
+
 
 h1 {
     margin: 48px 0 22px -5px;
+    font-family: 'Roboto Slab';
     font-size: 2.0rem;
     font-weight: bold;
     line-height: 2.0rem;
 }
 
+
+
 h2 {
     margin: 42px 0 18px -5px;
+    font-family: 'Roboto Slab';
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
 }
 
+.card h2:before{
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    content: "🌞";
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 16px
+}
+
+
 h3 {
     margin: 38px 0 15px -4px;
+    font-family: 'Roboto Slab';
     font-size: 1.6rem;
     font-weight: bold;
     line-height: 1.7rem;
@@ -307,6 +327,11 @@ header .brand-logo .logo-img {
 
 header .brand-logo .logo-span {
     font-size: 2rem;
+}
+
+/*标题字体*/
+.logo-span{
+    font-family: 'lixukemaobixs20123b84e4218bb';
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
