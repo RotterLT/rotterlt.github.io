@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>网站展示</title>
+    <url>//p/72ec.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>好久不见，前段时间由于被人举报，公众号相关功能不能使用，于是自己也偷了点懒，一直没有更新。趁着前些时候的闲工夫，去搭建了一个个人网站。</p>
+<p>朋友问我为什么突然想做这个，其实我也不知道啦。</p>
+<p>大概是因为我向来喜欢研究一些技术类的东西，而且很早以前就有个做个人网站的梦想，希望在互联网的海洋里，有一叶属于自己的扁舟，于是，它就诞生啦。</p>
+<p><img src="http://q8d3d87m0.bkt.clouddn.com//image/20200415154523.gif" alt="👆主页动图"></p>
+<h2 id="在不同设备上的显示情况">在不同设备上的显示情况</h2>
+<p><img src="http://q8d3d87m0.bkt.clouddn.com//image/20200415154639.jpg" alt="👆台式电脑"></p>
+<p><img src="http://q8d3d87m0.bkt.clouddn.com//image/20200415154657.jpg" alt="👆笔记本"></p>
+<p><img src="http://q8d3d87m0.bkt.clouddn.com//image/20200415154808.jpg" alt="👆手机"></p>
+<p>域名是在阿里云斥巨资（9块钱）购入，服务器是在阿里云领取的低调奢华有内涵的学生免费服务器，网站基础框架为GitHub上开源的hexo搭建的静态网页。</p>
+<p>没花什么钱，但是确实花了不少时间，网站上线之前已经迭代过好几个版本在，才呈现出现在的模样。</p>
+<p>在此鸣谢一下阿里爸爸和github</p>
+<p>（虽然没收广告费，但是确实很实在）</p>
+<p>目前网站已经过通过ICP备案，可以正式上线啦！😊</p>
+<p><img src="https://i.loli.net/2020/04/15/pMhsyXAOE1F5S4C.png" alt="备案成功通知"></p>
+<p>哦对了，忘了说域名了！</p>
+<p>大家喜欢的话可以点击链接 <a href="https://www.rotterlt.top" target="_blank" rel="noopener">https://www.rotterlt.top</a> 直接访问，电脑端效果更香哦！</p>
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>]]></content>
+      <tags>
+        <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>The Good Doctor S01E06</title>
     <url>//p/bbf0.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><blockquote>
